@@ -1,0 +1,254 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  iframe {
+    width: 100%;
+    height: 450px;
+  }
+}
+main {
+  .contact-with-us {
+    padding: 0;
+    padding-top: 80px;
+    margin: 0;
+    .title-contact {
+      margin-bottom: 30px;
+      .title {
+        padding-bottom: 0;
+        margin-top: -3px;
+        h1 {
+          color: #222222;
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 36px;
+          text-transform: capitalize;
+        }
+        span {
+          display: block;
+          position: relative;
+          overflow: hidden;
+          background: gainsboro;
+          height: 1px;
+        }
+        span::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          z-index: 1;
+          left: 0;
+          width: 70px;
+          height: 1px;
+          background: #0392ce;
+        }
+      }
+    }
+    .contact-section {
+      padding-bottom: 80px;
+      .form-andtitle {
+        padding: 30px 35px 35px 35px;
+        border: 1px solid #f4f4f4;
+        .title {
+          text-align: left;
+          h2 {
+            color: #222222;
+            font-size: 26px;
+            line-height: 24px;
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
+          }
+        }
+        .contact-form {
+          form {
+            margin-left: -15px;
+            margin-right: -15px;
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            .contact-name,
+            .contact-email,
+            .contact-phone,
+            .contact-subject {
+              padding-left: 15px;
+              padding-right: 20px;
+              width: 50%;
+              input {
+                height: 50px;
+                display: block;
+                width: 100%;
+                padding: 0.5rem 0.75rem;
+                font-size: 1rem;
+                line-height: 1.25;
+                color: #495057;
+                background-color: #fff;
+                border: 1px solid #e6e0e0;
+              }
+              input:focus {
+                background-color: transparent !important;
+                outline: none;
+              }
+            }
+            .contact-message {
+              padding-left: 15px;
+              padding-right: 20px;
+              width: 100%;
+              margin-bottom: 20px;
+              textarea {
+                height: 150px;
+                display: block;
+                width: 100%;
+                padding: 8px 12px;
+                resize: none;
+                font-size: 1rem;
+                line-height: 1.25;
+                color: #495057;
+                background-color: #fff;
+                border: 1px solid #e6e0e0;
+              }
+              textarea:focus {
+                background-color: transparent !important;
+                outline: none;
+              }
+            }
+            .contact-submit-btn {
+              padding-left: 15px;
+              padding-right: 20px;
+              width: 100%;
+              button {
+                background-color: #0392ce;
+                color: #ffffff;
+                margin: 0;
+                width: 100%;
+                border: 2px solid #0392ce;
+                border-radius: 30px;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                text-transform: uppercase;
+                font-weight: 800;
+                line-height: 1.25;
+                padding: 14px 34px;
+                font-size: 16px;
+                &:hover {
+                  background-color: white;
+                  color: #0392ce;
+                }
+              }
+            }
+          }
+
+          @media screen and (max-width: 650px) {
+            form {
+              display: block;
+              .contact-name,
+              .contact-email,
+              .contact-phone,
+              .contact-subject {
+                width: 100%;
+                padding-right: 15px;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 700px) {
+          padding-right: 0;
+        }
+      }
+      .quickcontact-contact {
+        padding-top: 35px;
+        padding-right: 35px;
+        padding-bottom: 5px;
+        padding-left: 35px;
+        border-width: 1px;
+        border-color: #f4f4f4;
+        border-style: solid;
+        box-shadow: 0px 0px 0px 0px #fff;
+        .adress-contact {
+          .title {
+            h3 {
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              color: #201f1f;
+              font-size: 28px;
+              line-height: 24px;
+              font-weight: 400;
+            }
+          }
+        }
+        .quickcontact-content {
+          margin: 0;
+          .quick-contact {
+            list-style: none;
+            padding: 0;
+            li {
+              position: relative;
+              border-bottom: 1px solid #f4f4f4;
+              // padding: 12px 0 10px 55px;
+              display: flex;
+              align-items: center;
+              gap: 30px;
+              list-style-type: none;
+              margin: 0;
+              .dep-icon {
+                left: 0;
+                i {
+                  color: #0392ce;
+                  font-size: 25px;
+                  line-height: 25px;
+                }
+              }
+              .dep-text {
+                h5 {
+                  color: #848484;
+                  font-size: 18px;
+                  font-weight: 300;
+                  line-height: 26px;
+                  font-family: "Hind", sans-serif;
+                }
+              }
+            }
+          }
+        }
+        .socialicons-contact {
+          ul {
+            margin: 0;
+            list-style: none;
+            display: flex;
+            padding: 0;
+            li {
+              &:hover a {
+                color: #0392ce;
+              }
+              a {
+                display: inline-block;
+                margin: 5px;
+                padding: 1px;
+                width: 18px;
+                color: #999999;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        .bbb {
+          display: flex;
+          flex-wrap: wrap;
+          .col-md-7,
+          .col-md-5 {
+            width: 100%;
+
+            .quickcontact-content {
+              width: 100%;
+              p {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

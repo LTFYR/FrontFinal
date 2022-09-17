@@ -1,0 +1,254 @@
+main {
+  .departments-bg {
+    .bgdep {
+      background-image: url(/images/Departmenthtml/departmentBG/breadcrumb-bg.jpg);
+      background-repeat: no-repeat;
+      position: relative;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+      &::before {
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+      .title {
+        padding: 107px 0;
+        background: rgba(0, 0, 0, 0) !important;
+        position: relative;
+        h2 {
+          color: #ffffff !important;
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 50px;
+          text-align: center;
+          z-index: 9;
+        }
+      }
+    }
+  }
+  .breadcrumb {
+    border: 1px solid #f0f0f0;
+    span {
+      background-color: transparent;
+    }
+    .pl-bc {
+      padding-left: 12px;
+      ul {
+        display: flex;
+        gap: 6px;
+        padding: 18px 0 1px 0;
+        list-style: none;
+        li {
+          a {
+            color: #222;
+          }
+          .aqua {
+            color: #0392ce;
+            i {
+              padding-right: 6px;
+            }
+          }
+        }
+      }
+    }
+    .share-bc {
+      line-height: 60px;
+      @media only screen and (max-width: 600px) {
+        .content-social {
+          text-align: left !important;
+        }
+      }
+      .share-social {
+        .content-social {
+          text-align: right;
+          a {
+            font-family: Open Sans;
+            font-size: 16px;
+            color: #222;
+            &:hover {
+              color: #0392ce;
+            }
+            span {
+              i {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .departments-medical {
+    padding: 80px 0;
+    .content {
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+      display: block;
+      border: 1px solid #f0f0f0;
+      padding: 9px px 9px 10px;
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: -50px;
+        right: 130px;
+        background: #0392ce;
+        height: 20px;
+        width: 32px;
+        border-radius: 1px;
+        transform: scale(1);
+        transform-origin: 50% 50%;
+        transition: all 500ms ease;
+      }
+      &:hover:before {
+        transform: scale(21);
+      }
+      &:hover .icon {
+        position: relative;
+        background: transparent;
+        display: block;
+        padding: 25px 0 25px;
+        z-index: 9;
+      }
+      &:hover {
+        i {
+          transition: all 0.5s ease-out;
+          color: white !important;
+        }
+      }
+      &:hover .readmore {
+        color: white;
+        background-color: #0392ce;
+      }
+      a {
+        border: 1px solid #f0f0f0;
+        color: #222222;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 6px 15px 4px;
+        border-radius: 20px;
+        font-family: "Poppins", sans-serif;
+        position: relative;
+        left: 96px;
+        top: -20px;
+        background: #fff;
+        transition: all 500ms ease;
+      }
+      .text {
+        display: block;
+        padding: 29px 10px 36px;
+        border-bottom: 1px solid #f0f0f0;
+        margin-left: -9px px;
+        margin-right: -9px;
+        h3 {
+          font-size: 1.75rem;
+          text-align: center;
+        }
+      }
+      .icon {
+        position: relative;
+        background: #fcfcfc;
+        display: block;
+        padding: 25px 0 25px;
+        z-index: 1;
+
+        i {
+          font-size: 100px;
+          line-height: 100px;
+          display: flex;
+          justify-content: center;
+          color: #0392ce;
+        }
+      }
+    }
+    @media screen and (max-width: 920px) and (min-width: 760px) {
+      .col-md-3 {
+        width: 100%;
+        .content {
+          text-align: center;
+          .readmore {
+            left: 0;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            z-index: 2;
+            top: -50px;
+            right: 150px;
+            left: 330px;
+            background: #0392ce;
+            height: 20px;
+            width: 40px;
+            border-radius: 1px;
+            transform: scale(1);
+            transform-origin: 50% 50%;
+            transition: all 500ms ease;
+          }
+          &:hover:before {
+            transform: scale(21);
+          }
+          &:hover .icon {
+            position: relative;
+            background: transparent;
+            display: block;
+            padding: 25px 0 25px;
+            z-index: 9;
+          }
+          &:hover {
+            i {
+              transition: all 0.5s ease-out;
+              color: white !important;
+            }
+          }
+          &:hover .readmore {
+            color: white;
+            background-color: #0392ce;
+          }
+          a {
+            border: 1px solid #f0f0f0;
+            color: #222222;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 6px 15px 4px;
+            border-radius: 20px;
+            font-family: "Poppins", sans-serif;
+            position: relative;
+            left: 96px;
+            top: -20px;
+            background: #fff;
+            transition: all 500ms ease;
+          }
+          .text {
+            display: block;
+            padding: 29px 10px 36px;
+            border-bottom: 1px solid #f0f0f0;
+            margin-left: -9px px;
+            margin-right: -9px;
+            h3 {
+              font-size: 1.75rem;
+              text-align: center;
+            }
+          }
+          .icon {
+            position: relative;
+            background: #fcfcfc;
+            display: block;
+            padding: 25px 0 25px;
+            z-index: 1;
+
+            i {
+              font-size: 100px;
+              line-height: 100px;
+              display: flex;
+              justify-content: center;
+              color: #0392ce;
+            }
+          }
+        }
+      }
+    }
+  }
+}

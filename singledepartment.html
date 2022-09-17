@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css"
+      integrity="sha512-6f7HT84a/AplPkpSRSKWqbseRTG4aRrhadjZezYQ0oVk/B+nm/US5KzQkyyOyh0Mn9cyDdChRdS9qaxJRHayww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="ShareJS/dist/needsharebutton.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="node_modules/simplelightbox/dist/simple-lightbox.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="mainheader"  id="main">
+        <div class="top">
+          <div class="container">
+            <div class="inner">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="contact-service">
+                    <div class="img"></div>
+                    <p>
+                      24 hours emergency & ambulance Service: +321 789 01 2345
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="social-media">
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-pinterest"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li><i class="fa-brands fa-dribbble"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="container">
+            <div class="inner">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="logo">
+                    <a href="index.html">
+                      <img src="/images/headersectionimages/logo.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="contactdetails">
+                    <div class="row content">
+                      <div class="col-lg-4 callus">
+                        <div class="icon"></div>
+                        <div class="text">
+                          <h4>Call us now</h4>
+                          <p>+1-888-987-6543</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 location mr-4">
+                        <div class="icon"></div>
+                        <div class="text">
+                          <h4>121 Park Drive</h4>
+                          <p>Varick St, Newyork 1006</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 date">
+                        <div class="icon"></div>
+                        <div class="text">
+                          <h4>Mon - Satday</h4>
+                          <p>09.00am to 18.00pm</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-1 search">
+                  <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                </div>
+                <div id="myOverlay" class="overlay">
+                     <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                     <div class="overlay-content">
+                     <form action="/action_page.php">
+                     <input type="text" placeholder="Search.." name="search">
+                     <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    </div>
+                   </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="end header-end">
+          <div class="container">
+            <div class="inner">
+              <div class="row">
+                <div class="col-lg-8 resp-nav">
+                  <nav>
+                    
+                    <button style="background-color: transparent; color: black;" class="btn btn-primary lnone" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa fa-bars hamb" ></i></button>
+
+                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><p>x</p></button>
+                         </div>
+                    <div class="offcanvas-body">
+                      
+      <!-- <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div> -->
+<div class="accordion open" id="accordionExample">
+  <div class="accordion-item">
+    <h2>Home</h2>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        About Us
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <h5><a href="">About Us</a></h5>
+        <h5><a href="">About Us</a></h5>
+        <h5><a href="">About Us</a></h5>
+        <h5><a href="">About Us</a></h5>
+        <h5><a href="">About Us</a></h5>
+        <h5><a href="">About Us</a></h5>
+        <h5><a href="">About Us</a></h5>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Departments
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <h5><a href="">Cardiology</a></h5>
+        <h5><a href="">Cardiology</a></h5>
+        <h5><a href="">Cardiology</a></h5>
+        <h5><a href="">Cardiology</a></h5>
+        <h5><a href="">Cardiology</a></h5>
+        <h5><a href="">Cardiology</a></h5>
+        <h5><a href="">Cardiology</a></h5>
+        <h5><a href="">Cardiology</a></h5>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2>Time Table</h2>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        News
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <h5><a href="">News Default</a></h5>
+        <h5><a href="">News Default</a></h5>
+        <h5><a href="">News Default</a></h5>
+        <h5><a href="">News Default</a></h5>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Shop
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <h5><a href="">Products</a></h5>
+        <h5><a href="">Checkout</a></h5>
+        <h5><a href="">Cart</a></h5>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2>Contact</h2>
+  </div>
+</div>
+                     <!-- <ul id="myOffcanvas">
+                      <li class="homeli"><a class="mainmenu" href="">HOME</a></li>
+                      
+                      <li>
+                        <a class="mainmenu" href=""
+                          >ABOUT US <i class="fa-solid fa-angle-down"></i
+                        ></a>
+                        <div class="dropdown1">
+                          <ul class="about">
+                            <li><a href="">About Hospital</a></li>
+                            <li><a href="doctors.html">Meet Our Doctors</a></li>
+                            <li><a href="">FAQ's</a></li>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Our Gallery</a></li>
+                            <li><a href="">Single Gallery</a></li>
+                            <li><a href="">Search</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="mainmenu" href="departments.html"
+                          >DEPARTMENTS <i class="fa-solid fa-angle-down"></i
+                        ></a>
+                        <div class="dropdown2">
+                          <ul class="department">
+                            <li><a href="singledepartment.html">Cardia Clinic</a></li>
+                            <li><a href="">Pulmonology</a></li>
+                            <li><a href="">Gynecology</a></li>
+                            <li><a href="">Neurology</a></li>
+                            <li><a href="">Urology</a></li>
+                            <li><a href="">Gastrology</a></li>
+                            <li><a href="">Pediatrician</a></li>
+                            <li><a href="">Labartory</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a class="mainmenu" href="timetable.html">TIME TABLE</a></li>
+                      <li>
+                        <a class="mainmenu" href=""
+                          >NEWS <i class="fa-solid fa-angle-down"></i
+                        ></a>
+                        <div class="dropdown3">
+                          <ul class="department">
+                            <li><a href="">News Default</a></li>
+                            <li><a href="">News Large View</a></li>
+                            <li><a href="">News Single Post</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="mainmenu" href=""
+                          >SHOP <i class="fa-solid fa-angle-down"></i
+                        ></a>
+                        <div class="dropdown4">
+                          <ul class="department">
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Thank You Page</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a class="mainmenu" href="contact.html">CONTACT</a></li>
+                       </ul> -->
+                        </div>
+                           </div>
+                    <ul id="myOffcanvas2">
+                      <li class="homeli"><a class="mainmenu" href="">HOME</a></li>
+                      
+                      <li>
+                        <a class="mainmenu" href=""
+                          >ABOUT US <i class="fa-solid fa-angle-down"></i
+                        ></a>
+                        <div class="dropdown1">
+                          <ul class="about">
+                            <li><a href="">About Hospital</a></li>
+                            <li><a href="doctors.html">Meet Our Doctors</a></li>
+                            <li><a href="loginregister.html">Login Page</a></li>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Our Gallery</a></li>
+                            <li><a href="">Single Gallery</a></li>
+                            <li><a href="singledoctor.html">Single Doctor</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="mainmenu" href="departments.html"
+                          >DEPARTMENTS <i class="fa-solid fa-angle-down"></i
+                        ></a>
+                        <div class="dropdown2">
+                          <ul class="department">
+                            <li><a href="singledepartment.html">Cardia Clinic</a></li>
+                            <li><a href="">Pulmonology</a></li>
+                            <li><a href="">Gynecology</a></li>
+                            <li><a href="">Neurology</a></li>
+                            <li><a href="">Urology</a></li>
+                            <li><a href="">Gastrology</a></li>
+                            <li><a href="">Pediatrician</a></li>
+                            <li><a href="">Labartory</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a class="mainmenu" href="timetable.html">TIME TABLE</a></li>
+                      <li>
+                        <a class="mainmenu" href=""
+                          >NEWS <i class="fa-solid fa-angle-down"></i
+                        ></a>
+                        <div class="dropdown3">
+                          <ul class="department">
+                            <li><a href="">News Default</a></li>
+                            <li><a href="">News Large View</a></li>
+                            <li><a href="">News Single Post</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="mainmenu" href=""
+                          >SHOP <i class="fa-solid fa-angle-down"></i
+                        ></a>
+                        <div class="dropdown4">
+                          <ul class="department">
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Thank You Page</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a class="mainmenu" href="contact.html">CONTACT</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-lg-1">
+                  <div class="cart">
+                    <a href="">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span class="cart-count">0</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-3 consultation">
+                  <a href="">FORCONSULTATION</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+            <section class="departments-bg">
+            <div class="bgdep">
+                <div class="title">
+                    <h2>Cardiac Clinic</h2>
+                </div>
+            </div>
+        </section>
+        <section class="breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 pl-bc">
+                        <div class="content-breadcrumb">
+                            <ul>
+                                <li class="bc-li"><a href="index.html"><span>Home</span></a></li>
+                                <li class="bc-li active"><span class=""><i style="padding-right: 4px;" class="fa-solid fa-angle-right"></i><a href="">Departments</a></span></li>
+                                <li class="bc-li active"><span class="aqua"><i class="fa-solid fa-angle-right"></i>Cardiac Clinic</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 share-bc" ata-share-icon-style="box" 
+     data-share-networks="Mailto,Twitter,Pinterest,Facebook">
+                        <div id="demo" class="share-social need-share-button-default">
+                            <div id="demo" class="content-social need-share-button-default" data-share-icon-style="box" 
+     data-share-networks="Mailto,Twitter,Pinterest,Facebook">
+                                <!-- <a href=""><span><i class="fa-solid fa-share-nodes"></i>Share</span></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cardio-dep">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="cardio1" class="wrapper">
+                            <div class="dep-content">
+                                    <h3>Departments</h3>
+                                <div class="all-departments">
+                                    <ul class="dep-listul">
+                                    <li class="dep-lists"><a href="">Cardiac Clinic</a>
+                                      <div class="plus-icon"></div>
+                                      <div class="minus-icon"></div>
+                                    </li>
+                                    <li class="dep-lists"><a href="">Cardiac Clinic</a>
+                                    <div class="plus-icon"></div>
+                                      <div class="minus-icon"></div></li>
+                                    <li class="dep-lists"><a href="">Cardiac Clinic</a>
+                                    <div class="plus-icon"></div>
+                                      <div class="minus-icon"></div></li>
+                                    <li class="dep-lists"><a href="">Cardiac Clinic</a>
+                                    <div class="plus-icon"></div>
+                                      <div class="minus-icon"></div></li>
+                                    <li class="dep-lists"><a href="">Cardiac Clinic</a>
+                                    <div class="plus-icon"></div>
+                                      <div class="minus-icon"></div></li>
+                                    <li class="dep-lists"><a href="">Cardiac Clinic</a>
+                                    <div class="plus-icon"></div>
+                                      <div class="minus-icon"></div></li>
+                                    <li class="dep-lists"><a href="">Cardiac Clinic</a>
+                                    <div class="plus-icon"></div>
+                                      <div class="minus-icon"></div></li>
+                                    <li class="dep-lists"><a href="">Cardiac Clinic</a>
+                                    <div class="plus-icon"></div>
+                                      <div class="minus-icon"></div></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cardio2" class="wrapper">
+                            <div class="dep-content">
+                                <h3>Openin Hours</h3>
+                               <div class="hours">
+                                 <ul class="opening-time">
+                                    <li class="single-optime">
+                                        <span>Mon to Friday:</span>
+                                        <span class="time-left">09.00 to 18.00</span>
+                                    </li>
+                                    <li class="single-optime"><span>Saturday: </span>
+                                        <span class="time-left">10.00 to 16.00</span></li>
+                                    
+                                    <li class="single-optime">
+                                        <span>Sunday: </span>
+                                        <span class="time-left">10.00 to 14.00</span>
+                                    </li>
+                                </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <div id="cardio3" class="wrapper">
+                            <div class="dep-content">
+                                <h3>Quick Contact</h3>
+                                <div class="dep-contact">
+                                    <ul class="quick-contact">
+                                        <li class="contact-li">
+                                            <div class="dep-icon">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </div>
+                                            <div class="dep-text">
+                                                 <h5>Park Drive, Varick 2nd Str<br>NY 10012, USA</h5>
+                                            </div>
+                                        </li>
+                                        <li class="contact-li">
+                                            <div class="dep-icon">
+                                               <i class="fa-solid fa-mobile-screen"></i>
+                                            </div>
+                                            <div class="dep-text">
+                                               <h5>office@example.com</h5>
+                                            </div>
+                                        </li>
+                                        <li class="contact-li">
+                                            <div class="dep-icon">
+                                               <i class="fa-solid fa-phone"></i>
+                                            </div>
+                                            <div class="dep-text">
+                                                <h5>     
+                                                   (123) 0200 12345 & 7890
+                                                </h5>
+                                            </div>
+                                        </li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="main-dep">
+                            <div class="main-image">
+                                <img class="img-fluid" src="/images/singleDepartment/main-image/tab-content-5.jpg" alt="">
+                            </div>
+                            <div class="small-images-dep">
+                                <ul class="small-images gallery">
+                                    <li>
+                                        <a href="/images/singleDepartment/small-images/tab-content-1.jpg">
+                                            <img class="img-fluid" src="/images/singleDepartment/small-images/tab-content-1.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/images/singleDepartment/small-images/tab-content-2.jpg">
+                                            <img class="img-fluid" src="/images/singleDepartment/small-images/tab-content-2.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/images/singleDepartment/small-images/tab-content-1.jpg">
+                                            <img class="img-fluid" src="/images/singleDepartment/small-images/tab-content-1.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/images/singleDepartment/small-images/tab-content-5.jpg">
+                                            <img class="img-fluid" src="/images/singleDepartment/small-images/tab-content-5.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/images/singleDepartment/small-images/tab-content-1.jpg">
+                                            <img class="img-fluid" src="/images/singleDepartment/small-images/tab-content-1.jpg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="description-singledep">
+                                <div class="single-desc">
+                                    <p>Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born wewill give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure sed rationally encounter consequences that are extremely painful.</p>
+                                    <br><br>
+                                    <p>Denouncing pleasure and praising pain was born wewill give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness rationally.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="investigate-treatment">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="investigate">
+                                        <div class="investigate-content">
+                                            <h3>Investigation</h3>
+                                            <ul>
+                                                <li>
+                                                    <p>Gastroscopy .......... </p>
+                                                    <span>$320</span>
+                                                </li>
+                                                 <li>
+                                                    <p>Gastroscopy .......... </p>
+                                                    <span>$320</span>
+                                                </li>
+                                                 <li>
+                                                    <p>Gastroscopy .......... </p>
+                                                    <span>$320</span>
+                                                </li>
+                                                 <li>
+                                                    <p>Gastroscopy .......... </p>
+                                                    <span>$320</span>
+                                                </li>
+                                                 <li>
+                                                    <p>Gastroscopy .......... </p>
+                                                    <span>$320</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="threatment-content">
+                                            <h3>Threatments</h3>
+                                            <ul>
+                                                <li>
+                                                    <p>Paratyroid Scan .......... </p>
+                                                    <span>$320</span>
+                                                </li>
+                                                 <li>
+                                                    <p>Paratyroid Scan .......... </p>
+                                                    <span>$320</span>
+                                                </li>
+                                                 <li>
+                                                    <p>Paratyroid Scan .......... </p>
+                                                    <span>$320</span>
+                                                </li>
+                                                 <li>
+                                                    <p>Paratyroid Scan .......... </p>
+                                                    <span>$320</span>
+                                                </li>
+                                                 <li>
+                                                    <p>Paratyroid Scan .......... </p>
+                                                    <span>$320</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="facilities-title">
+                <h1>Our Services</h1>
+                <span></span>
+              </div>
+              <div class="facilities">
+                    
+                   <div class="row d-flex">
+                    <div class="col-lg-6">
+                         <div class="single-content">
+                      <div class="icon">
+                        <div class="icon-table">
+                          <i class="fa-solid fa-bus"></i>
+                        </div>
+                      </div>
+                      <div class="text-area">
+                        <h3>24 Hrs Ambulance</h3>
+                        <p>
+                          How all this mistaken idea denoucing pleasure and
+                          praisings pain was born complete account expound.
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-content">
+                      <div class="icon">
+                        <div class="icon-table">
+                           <i class="fa-solid fa-bottle-water"></i>
+                        </div>
+                      </div>
+                      <div class="text-area">
+                       <h3>Food & Dietary</h3>
+                        <p>
+                          The Dietitian plans the diet based on the therapeutic
+                          needs of the patient, Local specialties, Continental.
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-content">
+                      <div class="icon">
+                        <div class="icon-table">
+                          <i class="fa-solid fa-user-nurse"></i>
+                        </div>
+                      </div>
+                      <div class="text-area">
+                        <h3>Speacial Nurses</h3>
+                        <p>
+                          Special nurse services can be arranged through Nursing
+                          , master of human happiness.
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-content">
+                      <div class="icon">
+                        <div class="icon-table">
+                          <i class="fa-solid fa-mosque"></i>
+                        </div>
+                      </div>
+                      <div class="text-area">
+                        <h3>Places for Worships</h3>
+                        <p>
+                          There is a temple of Goddess Krishna mariamman in the
+                          hospital premises, a Namaz room & Prayer cell
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+                   </div>
+                      </div>
+                      <div class="meet-ourdoctors">
+                        <div class="title-inner">
+                <div class="title">
+                  <h1>Meet Our Doctors</h1>
+                  <span class="blue"> </span>
+                </div>
+              </div>
+                        <div class="row">
+                  <div class="col-lg-4">
+                    <div class="single-doctor">
+                      <div class="image">
+                        <img
+                          class="img-fluid"
+                          src="/images/ourteam/1.jpg"
+                          alt=""
+                        />
+                        <div class="overlay">
+                          <div class="overlay-inner">
+                            <div class="overlay-content">
+                              <div class="detailinfo">
+                                <h3 class="detailinfoname">Marcy Parcival</h3>
+                                <p class="detailinfoadress">New York</p>
+                              </div>
+                              <span> </span>
+                            </div>
+                            <div class="animatedtext">
+                              <ul>
+                                <li>
+                                  <i class="fa fa-phone"></i> +321 567 89 0123
+                                </li>
+                                <li>
+                                  <i class="fa fa-envelope"></i>
+                                  Bailey@Hospitals.com
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info">
+                        <h3>Marcy Parcival</h3>
+                        <p>New York</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="single-doctor">
+                      <div class="image">
+                        <img
+                          class="img-fluid"
+                          src="/images/ourteam/2.jpg"
+                          alt=""
+                        />
+                        <div class="overlay">
+                          <div class="overlay-inner">
+                            <div class="overlay-content">
+                              <div class="detailinfo">
+                                <h3 class="detailinfoname">Marcy Parcival</h3>
+                                <p class="detailinfoadress">New York</p>
+                              </div>
+                              <span> </span>
+                            </div>
+                            <div class="animatedtext">
+                              <ul>
+                                <li>
+                                  <i class="fa fa-phone"></i> +321 567 89 0123
+                                </li>
+                                <li>
+                                  <i class="fa fa-envelope"></i>
+                                  Bailey@Hospitals.com
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="info">
+                        <h3>Marcy Parcival</h3>
+                        <p>New York</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="single-doctor">
+                      <div class="image">
+                        <img
+                          class="img-fluid"
+                          src="/images/ourteam/1.jpg"
+                          alt=""
+                        />
+                        <div class="overlay">
+                          <div class="overlay-inner">
+                            <div class="overlay-content">
+                              <div class="detailinfo">
+                                <h3 class="detailinfoname">Marcy Parcival</h3>
+                                <p class="detailinfoadress">New York</p>
+                              </div>
+                              <span> </span>
+                            </div>
+                            <div class="animatedtext">
+                              <ul>
+                                <li>
+                                  <i class="fa fa-phone"></i> +321 567 89 0123
+                                </li>
+                                <li>
+                                  <i class="fa fa-envelope"></i>
+                                  Bailey@Hospitals.com
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="info">
+                        <h3>Marcy Parcival</h3>
+                        <p>New York</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+      <footer>
+      <div class="about-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="title">
+                <h3>About Hospitals</h3>
+                <span></span>
+              </div>
+              <br />
+              <div class="content">
+                <p>
+                  The relentless service of Hospitals in the past 25 years taken
+                  health care to the most modern levels in the region catering
+                  to urban & rural.
+                </p>
+                <br />
+                <p>
+                  A Health Care Provider of Western Approach, Hospitals is the
+                  most trusted multispecialty hospital.
+                </p>
+              </div>
+              <br />
+              <div class="btn-more">
+                <a href="">KNOW MORE<i class="fa-solid fa-caret-right"></i></a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="title">
+                <h3>Usefull Links</h3>
+                <span></span>
+              </div>
+              <br />
+              <div class="content">
+                <div class="inner">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Awards</a></li>
+                        <li><a href="">Consultants</a></li>
+                        <li><a href="">Working Hours</a></li>
+                        <li><a href="">Procedures</a></li>
+                        <li><a href="">Speacial Offers</a></li>
+                        <li><a href="">FAQ's</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Departments</a></li>
+                        <li><a href="">Time Table</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="title titlelocation">
+                <h3>Contact Details</h3>
+                <span></span>
+              </div>
+              <div class="contentlocation">
+                <ul>
+                  <li>
+                    <div class="icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="text">
+                      <p>
+                        Park Drive, Varick Str New York,<br />
+                        NY 10012, USA
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                      <p>office@example.com</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="text">
+                      <p>(123) 0200 12345 & 7890</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="text">
+                      <p>Mon-Satday: 9am to 18pm</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="title titlelocation">
+                <h3>Make An Appointment</h3>
+                <span></span>
+              </div>
+              <div class="form-content">
+                <form action="">
+                  <input type="text" name="" id="" placeholder="Your Name" />
+                  <input type="email" name="" id="" placeholder="Your Email" />
+                  <input class="textarea"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Message"
+                  ></input>
+                  <button class="form-button" type="submit">SUBMIT</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="footer-content">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="copyright">
+                      <div class="text">
+                        <span>Copyrights © 2019 All Rights Reserved, Converted by </span>
+                        <a href="">Joomlabuff.com</a>
+                        <span>.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="social-media-icons">
+                      <div class="icons">
+                        <ul>
+                          <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          </li>
+                          <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                          <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="assets/js/owlcarousel.js"></script>
+    <script src="ShareJS/src/js/needsharebutton.js"></script>
+    <script src="node_modules/simplelightbox/dist/simple-lightbox.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+$('.collapse').collapse()
+    </script> 
+    <script>
+      var gallery = $('.gallery a').simpleLightbox();
+
+gallery.next();
+ new needShareDropdown(document.getElementById("demo"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+main {
+  .our-docs {
+    padding: 50px 0;
+    .custom-ourdoc-col {
+      display: table;
+      width: 100%;
+      .meet-ourdoctors {
+        padding-left: 15px;
+        width: 75%;
+        .title-inner {
+          .title {
+            position: relative;
+            margin-top: -3px;
+            padding-bottom: 50px;
+            h1 {
+              font-size: 32px;
+              font-weight: 400;
+              color: #222222;
+              line-height: 36px;
+            }
+            span {
+              display: block;
+              position: relative;
+              overflow: hidden;
+              background: gainsboro;
+              height: 1px;
+            }
+            span::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              z-index: 1;
+              left: 0;
+              width: 70px;
+              height: 1px;
+              background: #0392ce;
+            }
+          }
+        }
+        .single-doctor {
+          position: relative;
+          margin-bottom: 36px;
+          &:hover > .image > .overlay {
+            display: block;
+            transform: translate3d(0px, 0%, 0px);
+          }
+          &:hover .info {
+            transform: translateY(10px);
+            transition: all 0.9s ease;
+            opacity: 0;
+          }
+          .image {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            img {
+              display: block;
+              width: 100%;
+              transition: all 0.6s ease 0;
+            }
+            .overlay {
+              position: absolute;
+              top: -1px;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              background-color: rgba(18, 19, 19, 0.8);
+              padding: 0 20px;
+              transform: translate3d(0px, -100%, 0px);
+              transition: all 0.9s ease;
+              transition-delay: 500ms;
+              .overlay-inner {
+                display: table;
+                width: 100%;
+                height: 100%;
+                .overlay-content {
+                  display: table-cell;
+                  vertical-align: middle;
+                  text-align: left;
+                  .detailinfo {
+                    position: relative;
+                    right: 100%;
+                    bottom: 50px;
+                    transition: all 0.9s ease;
+                    .detailinfoname {
+                      color: white !important;
+                      margin: 0 0 4px;
+                      font-size: 32px;
+                      width: 200%;
+                    }
+                    .detailinfoadress {
+                      color: white;
+                    }
+                  }
+                  span {
+                    display: block;
+                    position: relative;
+                    bottom: 60px;
+                    height: 1px;
+                    width: 50px;
+                    background: #ffffff;
+                    margin: 11px 0 21px;
+                  }
+                }
+              }
+              .animatedtext {
+                position: relative;
+                left: 100%;
+                // left: -140px;
+                top: 140px;
+                transition: all 0.9s ease;
+                ul {
+                  list-style: none;
+                  li {
+                    color: white;
+                    line-height: 32px;
+                    display: flex;
+                    i {
+                      padding-right: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .info {
+            background: white;
+            padding-top: 18px 20px 12px;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            transform: translateY(0px);
+            transition: all 0.9s ease;
+            transition-delay: 0.1s;
+            border: 1px solid #f0f0f0;
+            border-top: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            h3 {
+              color: #222222;
+              font-size: 20px;
+              position: relative;
+              top: 30px;
+              margin: 0 0 3px;
+            }
+            p {
+              color: #0392ce;
+              position: relative;
+              top: 30px;
+            }
+          }
+          &:hover .detailinfo {
+            position: relative;
+            right: 0% !important;
+          }
+          &:hover .animatedtext {
+            position: relative;
+            left: -60% !important;
+          }
+        }
+      }
+      .my-custom-tab {
+        width: 25%;
+        float: left;
+        padding: 0;
+        padding-right: 15px;
+
+        .active {
+          width: 100%;
+          color: #ffffff;
+          border: 1px solid #0392ce;
+          background-color: #0392ce;
+          a {
+            color: white !important;
+          }
+        }
+        .btn-for-tab {
+          position: relative;
+          display: block;
+          list-style: none;
+          border: 1px solid #f0f0f0 !important;
+          cursor: pointer;
+          margin-left: 0 !important;
+          margin-bottom: 8px;
+          padding: 0px 0px 10px 0px;
+          &:hover {
+            width: 100%;
+            color: #ffffff;
+            border: 1px solid #0392ce;
+            background-color: #0392ce;
+            a {
+              color: white !important;
+            }
+          }
+
+          a {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 33px;
+            font-weight: 400;
+            color: #222222;
+            padding: 10px 10px 10px 30px;
+            text-align: center;
+          }
+        }
+      }
+
+      @media screen and (max-width: 760px) and (min-width: 320px) {
+        display: flex;
+        flex-direction: column;
+        .content-tab {
+          width: 130%;
+        }
+        .my-custom-tab {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          .active {
+            width: 50% !important;
+          }
+          .btn-for-tab {
+            width: 50%;
+            padding: 0 !important;
+            &:hover {
+              width: unset;
+            }
+            a {
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 960px) and (min-width: 761px) {
+        .content-tab {
+          .col-md-4 {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

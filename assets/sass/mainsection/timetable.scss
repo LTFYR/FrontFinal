@@ -1,0 +1,72 @@
+main {
+  .timetable {
+    overflow-x: scroll;
+    padding: 80px 0;
+    .schedule-plan {
+      .inner-plan {
+        .centre-height {
+          min-height: 44px;
+          padding: 10px;
+        }
+        .single-schedulerow {
+          flex: 1;
+          vertical-align: top;
+          margin: 0 1px;
+          margin: 0 1px;
+          .single-row {
+            .title {
+              font-size: 16px;
+              padding: 10px;
+              text-align: center;
+            }
+            ul {
+              background-color: cadetblue;
+              list-style-type: none;
+              margin-bottom: 2px;
+              display: block;
+              .timediv {
+                color: #fff;
+                height: 100%;
+                opacity: 1;
+                .time {
+                  font-size: 16px;
+                  padding-top: 15px;
+                  line-height: 26px;
+                  text-align: center;
+                  .timestart,
+                  .timeend {
+                    padding: 3px;
+                    background-color: transparent !important;
+                  }
+                  span {
+                    background-color: transparent;
+                  }
+                }
+              }
+              .bransch,
+              .name,
+              .level {
+                font-size: 16px;
+                padding: 0 20px 12px 20px;
+                font-weight: 400;
+                line-height: 27px;
+              }
+            }
+          }
+        }
+        .time-general {
+          display: inline-block;
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 165px;
+            margin: 0 5px 2px 0;
+            min-width: 20px;
+            padding: 0 3px;
+          }
+        }
+      }
+    }
+  }
+}
